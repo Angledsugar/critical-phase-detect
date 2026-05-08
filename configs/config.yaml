@@ -1,0 +1,20 @@
+# Root hydra config. Group configs (encoder/, env/, policy/, labeler/,
+# reward/, experiment/) are populated in subsequent PRs.
+
+defaults:
+  - _self_
+
+experiment:
+  name: default
+  seed: 42
+
+paths:
+  data: data
+  checkpoints: checkpoints
+  plots: plots
+  reports: reports
+
+wandb:
+  project: critical-phase-detector
+  entity: null
+  mode: online

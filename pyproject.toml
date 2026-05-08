@@ -1,0 +1,52 @@
+[project]
+name = "cpd"
+version = "0.1.0"
+description = "Critical Phase Detector — self-supervised CPD for VLA refinement (CoRL 2026)"
+authors = [
+    { name = "Angledsugar", email = "angledsugar@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "torch>=2.3",
+    "hydra-core>=1.3",
+    "wandb>=0.17",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+vla = [
+    "openpi @ git+https://github.com/Physical-Intelligence/openpi.git",
+]
+libero = [
+    "libero @ git+https://github.com/Lifelong-Robot-Learning/LIBERO.git",
+]
+labeling = [
+    "streamlit>=1.30",
+    "imageio[ffmpeg]>=2.34",
+]
+rl = [
+    "gymnasium>=0.29",
+    "stable-baselines3>=2.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.12,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

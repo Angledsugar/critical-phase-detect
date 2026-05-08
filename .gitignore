@@ -1,0 +1,32 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Project artifacts
+checkpoints/
+logs/
+runs/
+*.zip
+*.pt
+*.pth
+.pytest_cache/
+.ruff_cache/
+
+# Hydra outputs
+outputs/
+multirun/
+
+# wandb local cache
+wandb/
+
+# Generated data / figures
+data/
+plots/
+reports/runs/
