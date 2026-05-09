@@ -1,0 +1,16 @@
+# PPO refiner: low-rank adapter on top of frozen base. Paper §3.5.
+adapter:
+  _target_: cpd.policies.ppo_refiner.AdapterHead
+  in_dim: 128       # φ latent dim
+  action_dim: 7     # set per env (LIBERO: 7)
+  rank: 8
+
+ppo:
+  _target_: cpd.policies.ppo_refiner.PPOConfig
+  lr: 3.0e-4
+  clip_eps: 0.2
+  gamma: 0.99
+  lam: 0.95
+  epochs: 4
+  entropy_coef: 0.0
+  max_grad_norm: 1.0
