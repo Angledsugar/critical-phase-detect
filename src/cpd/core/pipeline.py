@@ -10,7 +10,7 @@ from collections.abc import Iterable
 from dataclasses import dataclass
 
 from cpd.core.buffer import TrajectoryBuffer
-from cpd.core.kde import KDEStats
+from cpd.core.kde import KDEStats, compute_kde
 from cpd.core.labeler import Labeler
 from cpd.core.reward import Reward
 from cpd.core.trajectory import Trajectory
@@ -23,10 +23,21 @@ class DetectorPipeline:
     kde: KDEStats | None = None
     reward: Reward | None = None
 
-    def ingest(self, trajs: Iterable[Trajectory]) -> None:
-        """Label trajs (with conf gating), push to buffer, refresh stats."""
-        raise NotImplementedError("PR0 stub — implement in PR1.")
+    def ingest(self, trajs: Trajectory | Iterable[Trajectory]) -> None:
+        """Label trajs, push to buffer, refresh stats once both buckets exist."""
+        if isinstance(trajs, Trajectory):
+            trajs = [trajs]
+        any_added = False
+        for traj in trajs:
+            labeled = traj if traj.labeled else self.labeler.label(traj)
+            self.buffer.add(labeled)
+            any_added = True
+        if any_added and self.buffer.n_positive > 0 and self.buffer.n_negative > 0:
+            self.refresh_stats()
 
     def refresh_stats(self) -> None:
-        """Recompute KDE + reward from the current buffer."""
-        raise NotImplementedError("PR0 stub — implement in PR1.")
+        """Recompute KDE + reward from the current buffer. Idempotent."""
+        if self.buffer.n_positive == 0 and self.buffer.n_negative == 0:
+            return
+        self.kde = compute_kde(self.buffer)
+        self.reward = Reward(kde=self.kde)

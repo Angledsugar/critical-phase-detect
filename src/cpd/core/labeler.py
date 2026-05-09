@@ -17,9 +17,9 @@ from cpd.core.trajectory import Trajectory
 
 
 class Labeler(Protocol):
-    """Maps a trajectory to (success, conf)."""
+    """Maps a trajectory to a labeled trajectory."""
 
-    def label(self, traj: Trajectory) -> tuple[bool, float]: ...
+    def label(self, traj: Trajectory) -> Trajectory: ...
 
 
 @dataclass
@@ -36,7 +36,17 @@ class G2Labeler:
         *,
         quantile: float = 0.95,
     ) -> G2Labeler:
-        raise NotImplementedError("PR0 stub — implement in PR1 (T1 core impl).")
+        if len(demos) == 0:
+            raise ValueError("from_demos requires at least one demo trajectory")
+        if not (0.0 < quantile <= 1.0):
+            raise ValueError(f"quantile must be in (0, 1], got {quantile}")
+        finals = torch.stack([t.final_latent for t in demos], dim=0)
+        g = finals.mean(dim=0)
+        dists = torch.linalg.norm(finals - g, dim=-1)
+        epsilon = float(torch.quantile(dists, quantile).item())
+        return cls(g=g, epsilon=epsilon)
 
-    def label(self, traj: Trajectory) -> tuple[bool, float]:
-        raise NotImplementedError("PR0 stub — implement in PR1 (T1 core impl).")
+    def label(self, traj: Trajectory) -> Trajectory:
+        dist = float(torch.linalg.norm(traj.final_latent - self.g).item())
+        success = dist <= self.epsilon
+        return traj.with_label(success=success)
