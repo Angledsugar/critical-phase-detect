@@ -1,0 +1,32 @@
+# TLDR encoder + triplet trainer config. Paper §3.3.
+
+name: tldr
+state_dim: 16
+latent_dim: 64
+hidden_dim: 128
+num_layers: 3
+
+lr: 1.0e-3
+weight_decay: 0.0
+batch_size: 256
+
+epochs: 50
+num_batches_per_epoch: 50
+
+k_pos: 2
+K_neg: 20
+margin: 1.0
+
+# smoke synthetic toy trajectories — overridden when real demos are passed
+synthetic:
+  num_trajectories: 32
+  traj_length: 100
+  drift: 0.05
+  noise: 0.1
+
+trajectories_path: null  # optional: pickle of list[Trajectory]
+weights_path: checkpoints/tldr.pt
+seed: 42
+
+wandb:
+  enabled: false
