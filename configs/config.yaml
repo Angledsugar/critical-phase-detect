@@ -18,3 +18,4 @@ wandb:
   project: critical-phase-detector
   entity: null
   mode: online
+  enabled: false

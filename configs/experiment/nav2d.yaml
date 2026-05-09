@@ -1,0 +1,7 @@
+# @package _group_
+# Nav2D toy experiment — small scale, deterministic for CI.
+name: nav2d
+seed: 0
+n_demos: 20
+n_rollouts: 50
+quantile: 0.95
