@@ -1,0 +1,7 @@
+# LIBERO-Long (= libero_10) main eval suite. Paper §6.1.
+_target_: cpd.envs.libero.LiberoEnv
+suite: libero_long
+task_id: 0
+image_size: 128
+max_steps: 600
+max_demos: 20
