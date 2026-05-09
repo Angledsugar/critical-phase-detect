@@ -1,0 +1,21 @@
+# RLT-style handoff labeling. Track 5 (T5) of CoRL 2026 paper.
+# 200 train + 100 test LIBERO-Long trajectories, 20-trajectory pilot for
+# κ ≥ 0.8 calibration.
+
+traj_dir: data/trajectories/libero_long
+output_dir: data/rlt_labels
+rubric_path: null  # null → render the in-code RubricV1.to_markdown()
+
+# Pilot set used to compute κ vs _reference annotations. Populate with the
+# 20 trajectory IDs picked for calibration before running.
+pilot_set: []
+
+# Frozen post-pilot split. Loader expects 200 train + 100 test.
+split:
+  train: 200
+  test: 100
+  seed: 0
+
+# Cohen-style κ tolerance (steps): handoffs within ±tolerance count as
+# agreement. Matches RLT paper's evaluation tolerance.
+kappa_tolerance: 3
