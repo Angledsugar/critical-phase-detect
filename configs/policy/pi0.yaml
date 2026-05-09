@@ -1,0 +1,6 @@
+# π_0 base policy (openpi). Frozen during refinement. Paper §6.1.2.
+_target_: cpd.policies.pi0.Pi0Policy
+model_id: pi0_libero
+checkpoint_dir: null  # set to local dir or gs://openpi-assets/checkpoints/pi0_libero/...
+device: cuda
+default_prompt: null
