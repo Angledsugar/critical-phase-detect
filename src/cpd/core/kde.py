@@ -19,15 +19,21 @@ class KDEStats:
     latents_pos: torch.Tensor  # (sum_T_pos, d)
     latents_neg: torch.Tensor  # (sum_T_neg, d)
 
-    def density(self, x: torch.Tensor, *, positive: bool) -> torch.Tensor:
-        """Evaluate f̃_± at points x of shape (B, d) or (d,). Returns (B,) or scalar."""
+    def log_density(self, x: torch.Tensor, *, positive: bool) -> torch.Tensor:
+        """Evaluate log f̃_± at points x of shape (B, d) or (d,). Returns (B,) or scalar.
+
+        Stays in log-space throughout — required for high-d KDE where exp(log f)
+        would over/underflow into ±inf or 0.
+        """
         latents = self.latents_pos if positive else self.latents_neg
         squeeze = False
         if x.ndim == 1:
             x = x.unsqueeze(0)
             squeeze = True
         if latents.numel() == 0 or latents.shape[0] == 0:
-            out = torch.zeros(x.shape[0], dtype=x.dtype, device=x.device)
+            out = torch.full(
+                (x.shape[0],), float("-inf"), dtype=x.dtype, device=x.device
+            )
             return out.squeeze(0) if squeeze else out
 
         d = x.shape[-1]
@@ -41,8 +47,11 @@ class KDEStats:
         log_kern = -0.5 * sq / (h * h) + log_norm
         # log(1/N) + logsumexp over neighbors
         log_density = torch.logsumexp(log_kern, dim=-1) - math.log(n)
-        out = torch.exp(log_density)
-        return out.squeeze(0) if squeeze else out
+        return log_density.squeeze(0) if squeeze else log_density
+
+    def density(self, x: torch.Tensor, *, positive: bool) -> torch.Tensor:
+        """Evaluate f̃_± at points x. Wrapper around log_density; can over/underflow in high d."""
+        return torch.exp(self.log_density(x, positive=positive))
 
 
 def silverman_bandwidth(latents: torch.Tensor) -> float:

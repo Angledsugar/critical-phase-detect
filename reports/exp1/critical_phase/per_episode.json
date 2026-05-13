@@ -1,0 +1,354 @@
+[
+  {
+    "episode": "ep000",
+    "success": true,
+    "T": 278,
+    "n_critical_steps": 88,
+    "critical_fraction": 0.31654676258992803,
+    "first_critical_t": 157,
+    "argmin_r_t": 167,
+    "min_r_t": -6.2412109375,
+    "mean_r_t": 1.8674120903015137,
+    "sum_r_t": 519.1405639648438,
+    "longest_critical_run": 71,
+    "intervals": [
+      [
+        157,
+        228
+      ],
+      [
+        234,
+        243
+      ],
+      [
+        256,
+        264
+      ]
+    ],
+    "kde": {
+      "h": 0.061010370641422056,
+      "n_pos": 1934,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep001",
+    "success": true,
+    "T": 280,
+    "n_critical_steps": 131,
+    "critical_fraction": 0.46785714285714286,
+    "first_critical_t": 27,
+    "argmin_r_t": 110,
+    "min_r_t": -4.34783935546875,
+    "mean_r_t": 0.7513805031776428,
+    "sum_r_t": 210.38653564453125,
+    "longest_critical_run": 108,
+    "intervals": [
+      [
+        27,
+        135
+      ],
+      [
+        235,
+        258
+      ]
+    ],
+    "kde": {
+      "h": 0.061972698590017014,
+      "n_pos": 1932,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep002",
+    "success": true,
+    "T": 272,
+    "n_critical_steps": 121,
+    "critical_fraction": 0.44485294117647056,
+    "first_critical_t": 33,
+    "argmin_r_t": 138,
+    "min_r_t": -11.285911560058594,
+    "mean_r_t": 0.40559080243110657,
+    "sum_r_t": 110.3207015991211,
+    "longest_critical_run": 36,
+    "intervals": [
+      [
+        33,
+        67
+      ],
+      [
+        96,
+        105
+      ],
+      [
+        122,
+        148
+      ],
+      [
+        189,
+        192
+      ],
+      [
+        193,
+        197
+      ],
+      [
+        199,
+        235
+      ],
+      [
+        249,
+        258
+      ]
+    ],
+    "kde": {
+      "h": 0.06117565300193928,
+      "n_pos": 1940,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep003",
+    "success": true,
+    "T": 280,
+    "n_critical_steps": 16,
+    "critical_fraction": 0.05714285714285714,
+    "first_critical_t": 64,
+    "argmin_r_t": 66,
+    "min_r_t": -0.6736907958984375,
+    "mean_r_t": 3.859767436981201,
+    "sum_r_t": 1080.73486328125,
+    "longest_critical_run": 13,
+    "intervals": [
+      [
+        64,
+        77
+      ],
+      [
+        156,
+        159
+      ]
+    ],
+    "kde": {
+      "h": 0.06160214549007237,
+      "n_pos": 1932,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep004",
+    "success": true,
+    "T": 337,
+    "n_critical_steps": 49,
+    "critical_fraction": 0.14540059347181009,
+    "first_critical_t": 123,
+    "argmin_r_t": 168,
+    "min_r_t": -3.2392501831054688,
+    "mean_r_t": 3.3647801876068115,
+    "sum_r_t": 1133.930908203125,
+    "longest_critical_run": 16,
+    "intervals": [
+      [
+        123,
+        139
+      ],
+      [
+        159,
+        175
+      ],
+      [
+        233,
+        241
+      ],
+      [
+        284,
+        293
+      ]
+    ],
+    "kde": {
+      "h": 0.060559859102672635,
+      "n_pos": 1875,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep005",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 274,
+    "critical_fraction": 0.5269230769230769,
+    "first_critical_t": 85,
+    "argmin_r_t": 468,
+    "min_r_t": -13.483535766601562,
+    "mean_r_t": 1.999377965927124,
+    "sum_r_t": 1039.676513671875,
+    "longest_critical_run": 137,
+    "intervals": [
+      [
+        85,
+        92
+      ],
+      [
+        219,
+        251
+      ],
+      [
+        266,
+        403
+      ],
+      [
+        418,
+        503
+      ],
+      [
+        505,
+        509
+      ],
+      [
+        511,
+        520
+      ]
+    ],
+    "kde": {
+      "h": 0.06207102071538706,
+      "n_pos": 2212,
+      "n_neg": 520
+    }
+  },
+  {
+    "episode": "ep006",
+    "success": true,
+    "T": 276,
+    "n_critical_steps": 35,
+    "critical_fraction": 0.12681159420289856,
+    "first_critical_t": 175,
+    "argmin_r_t": 178,
+    "min_r_t": -3.1783828735351562,
+    "mean_r_t": 2.766047716140747,
+    "sum_r_t": 763.42919921875,
+    "longest_critical_run": 16,
+    "intervals": [
+      [
+        175,
+        188
+      ],
+      [
+        237,
+        253
+      ],
+      [
+        258,
+        264
+      ]
+    ],
+    "kde": {
+      "h": 0.06146909778410693,
+      "n_pos": 1936,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep007",
+    "success": true,
+    "T": 244,
+    "n_critical_steps": 71,
+    "critical_fraction": 0.29098360655737704,
+    "first_critical_t": 91,
+    "argmin_r_t": 207,
+    "min_r_t": -4.664100646972656,
+    "mean_r_t": 1.035345196723938,
+    "sum_r_t": 252.62423706054688,
+    "longest_critical_run": 32,
+    "intervals": [
+      [
+        91,
+        97
+      ],
+      [
+        110,
+        142
+      ],
+      [
+        151,
+        166
+      ],
+      [
+        198,
+        216
+      ]
+    ],
+    "kde": {
+      "h": 0.062322903500868373,
+      "n_pos": 1968,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep008",
+    "success": true,
+    "T": 245,
+    "n_critical_steps": 95,
+    "critical_fraction": 0.3877551020408163,
+    "first_critical_t": 19,
+    "argmin_r_t": 90,
+    "min_r_t": -8.917434692382812,
+    "mean_r_t": 1.1743232011795044,
+    "sum_r_t": 287.7091979980469,
+    "longest_critical_run": 81,
+    "intervals": [
+      [
+        19,
+        100
+      ],
+      [
+        131,
+        139
+      ],
+      [
+        172,
+        175
+      ],
+      [
+        208,
+        211
+      ]
+    ],
+    "kde": {
+      "h": 0.061251874125182494,
+      "n_pos": 1967,
+      "n_neg": 1040
+    }
+  },
+  {
+    "episode": "ep009",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 86,
+    "critical_fraction": 0.16538461538461538,
+    "first_critical_t": 112,
+    "argmin_r_t": 414,
+    "min_r_t": -11.538566589355469,
+    "mean_r_t": 9.501343727111816,
+    "sum_r_t": 4940.69873046875,
+    "longest_critical_run": 57,
+    "intervals": [
+      [
+        112,
+        133
+      ],
+      [
+        370,
+        427
+      ],
+      [
+        434,
+        442
+      ]
+    ],
+    "kde": {
+      "h": 0.0581885091654488,
+      "n_pos": 2212,
+      "n_neg": 520
+    }
+  }
+]

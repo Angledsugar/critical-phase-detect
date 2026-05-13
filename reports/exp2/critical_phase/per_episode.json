@@ -1,0 +1,594 @@
+[
+  {
+    "episode": "ep005",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 230,
+    "critical_fraction": 0.4423076923076923,
+    "first_critical_t": 40,
+    "argmin_r_t": 467,
+    "min_r_t": -7.409080505371094,
+    "mean_r_t": 0.1013527512550354,
+    "sum_r_t": 52.70343017578125,
+    "longest_critical_run": 79,
+    "intervals": [
+      [
+        40,
+        50
+      ],
+      [
+        89,
+        95
+      ],
+      [
+        98,
+        106
+      ],
+      [
+        171,
+        176
+      ],
+      [
+        181,
+        184
+      ],
+      [
+        202,
+        217
+      ],
+      [
+        255,
+        261
+      ],
+      [
+        263,
+        269
+      ],
+      [
+        272,
+        300
+      ],
+      [
+        338,
+        399
+      ],
+      [
+        419,
+        498
+      ],
+      [
+        516,
+        519
+      ]
+    ],
+    "kde": {
+      "h": 0.05850091997526897,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep009",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 130,
+    "critical_fraction": 0.25,
+    "first_critical_t": 28,
+    "argmin_r_t": 495,
+    "min_r_t": -16.386138916015625,
+    "mean_r_t": 1.9336063861846924,
+    "sum_r_t": 1005.475341796875,
+    "longest_critical_run": 62,
+    "intervals": [
+      [
+        28,
+        36
+      ],
+      [
+        108,
+        114
+      ],
+      [
+        134,
+        140
+      ],
+      [
+        364,
+        426
+      ],
+      [
+        470,
+        478
+      ],
+      [
+        480,
+        520
+      ]
+    ],
+    "kde": {
+      "h": 0.05833733565775382,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep015",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 192,
+    "critical_fraction": 0.36923076923076925,
+    "first_critical_t": 33,
+    "argmin_r_t": 502,
+    "min_r_t": -9.464210510253906,
+    "mean_r_t": -0.5957050323486328,
+    "sum_r_t": -309.7666015625,
+    "longest_critical_run": 151,
+    "intervals": [
+      [
+        33,
+        42
+      ],
+      [
+        247,
+        252
+      ],
+      [
+        272,
+        277
+      ],
+      [
+        293,
+        315
+      ],
+      [
+        369,
+        520
+      ]
+    ],
+    "kde": {
+      "h": 0.05800621914892956,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep018",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 216,
+    "critical_fraction": 0.4153846153846154,
+    "first_critical_t": 32,
+    "argmin_r_t": 155,
+    "min_r_t": -2.9947357177734375,
+    "mean_r_t": 2.82004451751709,
+    "sum_r_t": 1466.423095703125,
+    "longest_critical_run": 185,
+    "intervals": [
+      [
+        32,
+        217
+      ],
+      [
+        219,
+        227
+      ],
+      [
+        233,
+        246
+      ],
+      [
+        300,
+        310
+      ]
+    ],
+    "kde": {
+      "h": 0.05843732818383273,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep049",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 388,
+    "critical_fraction": 0.7461538461538462,
+    "first_critical_t": 40,
+    "argmin_r_t": 379,
+    "min_r_t": -2.1093063354492188,
+    "mean_r_t": -0.3502436578273773,
+    "sum_r_t": -182.126708984375,
+    "longest_critical_run": 353,
+    "intervals": [
+      [
+        40,
+        393
+      ],
+      [
+        405,
+        413
+      ],
+      [
+        415,
+        442
+      ]
+    ],
+    "kde": {
+      "h": 0.05856103228471731,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep068",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 485,
+    "critical_fraction": 0.9326923076923077,
+    "first_critical_t": 31,
+    "argmin_r_t": 508,
+    "min_r_t": -8.786361694335938,
+    "mean_r_t": -3.579641580581665,
+    "sum_r_t": -1861.41357421875,
+    "longest_critical_run": 485,
+    "intervals": [
+      [
+        31,
+        516
+      ]
+    ],
+    "kde": {
+      "h": 0.05854595858477671,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep099",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 366,
+    "critical_fraction": 0.7038461538461539,
+    "first_critical_t": 38,
+    "argmin_r_t": 360,
+    "min_r_t": -2.8833770751953125,
+    "mean_r_t": -0.9192731380462646,
+    "sum_r_t": -478.02203369140625,
+    "longest_critical_run": 332,
+    "intervals": [
+      [
+        38,
+        370
+      ],
+      [
+        392,
+        412
+      ],
+      [
+        472,
+        480
+      ],
+      [
+        498,
+        504
+      ]
+    ],
+    "kde": {
+      "h": 0.058559377705869914,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep115",
+    "success": true,
+    "T": 264,
+    "n_critical_steps": 7,
+    "critical_fraction": 0.026515151515151516,
+    "first_critical_t": 33,
+    "argmin_r_t": 36,
+    "min_r_t": -0.30449676513671875,
+    "mean_r_t": 1.377586841583252,
+    "sum_r_t": 363.68292236328125,
+    "longest_critical_run": 7,
+    "intervals": [
+      [
+        33,
+        40
+      ]
+    ],
+    "kde": {
+      "h": 0.0585041218641833,
+      "n_pos": 52568,
+      "n_neg": 6760
+    }
+  },
+  {
+    "episode": "ep118",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 498,
+    "critical_fraction": 0.9576923076923077,
+    "first_critical_t": 17,
+    "argmin_r_t": 481,
+    "min_r_t": -9.531929016113281,
+    "mean_r_t": -3.579669952392578,
+    "sum_r_t": -1861.4283447265625,
+    "longest_critical_run": 488,
+    "intervals": [
+      [
+        17,
+        505
+      ],
+      [
+        510,
+        520
+      ]
+    ],
+    "kde": {
+      "h": 0.05853671849187527,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep134",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 132,
+    "critical_fraction": 0.25384615384615383,
+    "first_critical_t": 39,
+    "argmin_r_t": 480,
+    "min_r_t": -19.482521057128906,
+    "mean_r_t": -0.038665127009153366,
+    "sum_r_t": -20.105865478515625,
+    "longest_critical_run": 52,
+    "intervals": [
+      [
+        39,
+        50
+      ],
+      [
+        105,
+        108
+      ],
+      [
+        144,
+        153
+      ],
+      [
+        277,
+        298
+      ],
+      [
+        363,
+        374
+      ],
+      [
+        375,
+        379
+      ],
+      [
+        383,
+        387
+      ],
+      [
+        420,
+        423
+      ],
+      [
+        448,
+        500
+      ],
+      [
+        506,
+        520
+      ]
+    ],
+    "kde": {
+      "h": 0.05822797529555364,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep148",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 173,
+    "critical_fraction": 0.3326923076923077,
+    "first_critical_t": 32,
+    "argmin_r_t": 478,
+    "min_r_t": -4.057891845703125,
+    "mean_r_t": 1.8819656372070312,
+    "sum_r_t": 978.6221313476562,
+    "longest_critical_run": 52,
+    "intervals": [
+      [
+        32,
+        44
+      ],
+      [
+        77,
+        84
+      ],
+      [
+        122,
+        147
+      ],
+      [
+        229,
+        243
+      ],
+      [
+        268,
+        273
+      ],
+      [
+        282,
+        294
+      ],
+      [
+        409,
+        461
+      ],
+      [
+        474,
+        520
+      ]
+    ],
+    "kde": {
+      "h": 0.05830458472939217,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep149",
+    "success": true,
+    "T": 514,
+    "n_critical_steps": 325,
+    "critical_fraction": 0.632295719844358,
+    "first_critical_t": 35,
+    "argmin_r_t": 204,
+    "min_r_t": -3.31939697265625,
+    "mean_r_t": -0.5192046761512756,
+    "sum_r_t": -266.8712158203125,
+    "longest_critical_run": 281,
+    "intervals": [
+      [
+        35,
+        316
+      ],
+      [
+        323,
+        331
+      ],
+      [
+        337,
+        348
+      ],
+      [
+        376,
+        393
+      ],
+      [
+        399,
+        404
+      ],
+      [
+        425,
+        428
+      ]
+    ],
+    "kde": {
+      "h": 0.05852283481349565,
+      "n_pos": 52318,
+      "n_neg": 6760
+    }
+  },
+  {
+    "episode": "ep179",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 166,
+    "critical_fraction": 0.3192307692307692,
+    "first_critical_t": 33,
+    "argmin_r_t": 379,
+    "min_r_t": -1.8845672607421875,
+    "mean_r_t": 1.0165119171142578,
+    "sum_r_t": 528.586181640625,
+    "longest_critical_run": 68,
+    "intervals": [
+      [
+        33,
+        50
+      ],
+      [
+        162,
+        173
+      ],
+      [
+        247,
+        253
+      ],
+      [
+        347,
+        415
+      ],
+      [
+        433,
+        473
+      ],
+      [
+        474,
+        498
+      ]
+    ],
+    "kde": {
+      "h": 0.05849249500577029,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep189",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 129,
+    "critical_fraction": 0.24807692307692308,
+    "first_critical_t": 24,
+    "argmin_r_t": 78,
+    "min_r_t": -1.7090072631835938,
+    "mean_r_t": 0.2291841059923172,
+    "sum_r_t": 119.17573547363281,
+    "longest_critical_run": 99,
+    "intervals": [
+      [
+        24,
+        123
+      ],
+      [
+        416,
+        446
+      ]
+    ],
+    "kde": {
+      "h": 0.05860872916979972,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  },
+  {
+    "episode": "ep199",
+    "success": false,
+    "T": 520,
+    "n_critical_steps": 319,
+    "critical_fraction": 0.6134615384615385,
+    "first_critical_t": 41,
+    "argmin_r_t": 450,
+    "min_r_t": -2.2489471435546875,
+    "mean_r_t": -0.2941315770149231,
+    "sum_r_t": -152.94842529296875,
+    "longest_critical_run": 212,
+    "intervals": [
+      [
+        41,
+        131
+      ],
+      [
+        230,
+        442
+      ],
+      [
+        445,
+        462
+      ]
+    ],
+    "kde": {
+      "h": 0.05852025786554789,
+      "n_pos": 52832,
+      "n_neg": 6240
+    }
+  }
+]

@@ -1,0 +1,19 @@
+/home/engineer/project/critical-phase-detector/scripts/extract_critical_phase.py:146: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  fig.tight_layout()
+[cp] LOO mode: building one KDE per rollout from the other 199 trajs
+  ep005  T=520  succ=False  crit_steps=230 (44.23%)  longest= 79  argmin t=467  min r=  -7.41
+  ep009  T=520  succ=False  crit_steps=130 (25.00%)  longest= 62  argmin t=495  min r= -16.39
+  ep015  T=520  succ=False  crit_steps=192 (36.92%)  longest=151  argmin t=502  min r=  -9.46
+  ep018  T=520  succ=False  crit_steps=216 (41.54%)  longest=185  argmin t=155  min r=  -2.99
+  ep049  T=520  succ=False  crit_steps=388 (74.62%)  longest=353  argmin t=379  min r=  -2.11
+  ep068  T=520  succ=False  crit_steps=485 (93.27%)  longest=485  argmin t=508  min r=  -8.79
+  ep099  T=520  succ=False  crit_steps=366 (70.38%)  longest=332  argmin t=360  min r=  -2.88
+  ep115  T=264  succ=True   crit_steps=  7 (2.65%)  longest=  7  argmin t= 36  min r=  -0.30
+  ep118  T=520  succ=False  crit_steps=498 (95.77%)  longest=488  argmin t=481  min r=  -9.53
+  ep134  T=520  succ=False  crit_steps=132 (25.38%)  longest= 52  argmin t=480  min r= -19.48
+  ep148  T=520  succ=False  crit_steps=173 (33.27%)  longest= 52  argmin t=478  min r=  -4.06
+  ep149  T=514  succ=True   crit_steps=325 (63.23%)  longest=281  argmin t=204  min r=  -3.32
+  ep179  T=520  succ=False  crit_steps=166 (31.92%)  longest= 68  argmin t=379  min r=  -1.88
+  ep189  T=520  succ=False  crit_steps=129 (24.81%)  longest= 99  argmin t= 78  min r=  -1.71
+  ep199  T=520  succ=False  crit_steps=319 (61.35%)  longest=212  argmin t=450  min r=  -2.25
+[cp] saved → reports/exp2/critical_phase/per_episode.json

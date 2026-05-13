@@ -1,7 +1,9 @@
 # TLDR encoder + triplet trainer config. Paper §3.3.
 
 name: tldr
-state_dim: 16
+# LIBERO proprio = [ee_pos(3), ee_ori(3), gripper_states(2)] → 8.
+# Synthetic toy used 16; switch to 8 when feeding real demos.
+state_dim: 8
 latent_dim: 64
 hidden_dim: 128
 num_layers: 3
@@ -24,7 +26,7 @@ synthetic:
   drift: 0.05
   noise: 0.1
 
-trajectories_path: null  # optional: pickle of list[Trajectory]
+trajectories_path: data/tldr_demos.pkl  # 500 LIBERO-Long demos × proprio (T,8); set to null for synthetic toy
 weights_path: checkpoints/tldr.pt
 seed: 42
 
